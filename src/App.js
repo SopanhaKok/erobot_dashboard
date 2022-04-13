@@ -1,14 +1,16 @@
-import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
-
-import { increaseCounter } from './actions/counterActions'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './pages/home/Home'
 
 const App = () => {
-  const dispatch = useDispatch()
-  useEffect(() => {
-    dispatch(increaseCounter())
-  }, [])
-  return <div>Hello World</div>
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/'>
+          <Route index element={<Home />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
 export default App

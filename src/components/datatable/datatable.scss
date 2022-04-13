@@ -1,0 +1,23 @@
+.title-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  .title {
+    font-size: 22px;
+  }
+}
+
+.action-button {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  .edit {
+    color: #0b2995;
+    cursor: pointer;
+  }
+
+  .delete {
+    color: #d11a2a;
+    cursor: pointer;
+  }
+}
